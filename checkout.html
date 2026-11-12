@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Checkout — Riwaaq</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">RIWAAQ</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#shop">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="checkout-page">
+    <section>
+      <h1>Enter your delivery details</h1>
+
+      <form id="checkout-form">
+        <div>
+          <label for="customer-name">Your name</label>
+          <input type="text" id="customer-name" name="name" required>
+        </div>
+
+        <div>
+          <label for="customer-phone">Phone number</label>
+          <input type="tel" id="customer-phone" name="phone" required>
+        </div>
+
+        <div>
+          <label for="customer-email">Email address</label>
+          <input type="email" id="customer-email" name="email" required>
+        </div>
+
+        <div>
+          <label for="delivery-address">Delivery address</label>
+          <textarea id="delivery-address" name="address" rows="4" required></textarea>
+        </div>
+
+        <div>
+          <label for="payment-method">Payment method</label>
+          <select id="payment-method" name="payment" required>
+            <option value="">Choose an option</option>
+            <option value="cash">Cash on delivery</option>
+          </select>
+        </div>
+
+        <button type="submit">Confirm order</button>
+      </form>
+      <p id="order-message" role="status"></p>
+    </section>
+
+    <section>
+      <h2>Your order</h2>
+      <div id="checkout-items">
+        <p>Your order details will appear here.</p>
+      </div>
+      <p><strong>Total: <span id="checkout-total">Rs. 0</span></strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Riwaaq. All rights reserved.</p>
+    <a href="contact.html">Contact us</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

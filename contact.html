@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Riwaaq</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">RIWAAQ</a>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#shop">Shop</a></li>
+        <li><a href="index.html#story">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+
+      <a href="index.html#shop">Browse products</a>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <section>
+      <p>We’re here to help</p>
+      <h1>Get in touch with Riwaaq</h1>
+      <p>
+        Have a question about a product, delivery, or your order?
+        Send us a message using the form below.
+      </p>
+    </section>
+
+    <section>
+      <h2>Send us a message</h2>
+
+      <form>
+        <div>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+          <label for="topic">What is your message about?</label>
+          <select id="topic" name="topic" required>
+            <option value="">Choose an option</option>
+            <option value="product">A product</option>
+            <option value="order">My order</option>
+            <option value="delivery">Delivery</option>
+            <option value="other">Another question</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your question or message here" required></textarea>
+        </div>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Continue shopping</h2>
+      <p>Explore more products from the Riwaaq collection.</p>
+      <a href="index.html#shop">Browse products</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Riwaaq. All rights reserved.</p>
+    <a href="index.html">Back to Home</a>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
